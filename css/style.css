@@ -365,10 +365,10 @@ h1{
 .card{
     height: 400px;
     width: 420px;
-    border-radius: 20px;
+    
     font-size: 19px;
     font-weight: 400;
-    color: hsl(300, 46%, 73%);
+    
 }
 .card_header{
     border-top-left-radius: 20px;
@@ -432,4 +432,76 @@ span {
     text-align: center;
     font-size: 14px;
    
+}
+/* -------------------------GRID Container-------------------------- */
+.grid_container{
+    display: grid;
+    grid-template-columns: auto auto 10px;
+    grid-template-rows:auto auto ;
+    grid-template-areas: 
+    "pr pr pr ps ps ps  pf pf"
+    "pl pl p1 hd hd hd pf pf "
+    ;
+    grid-gap: 10px 10px ;
+}
+.person1{
+  grid-area: pr; 
+  border-radius: 22px;
+  /* background: rgb(117, 65, 200); */
+    background: linear-gradient(0deg, 
+    rgb(117, 65, 200) 0%,
+     rgb(255, 255, 255) 100%);
+}
+.person2{
+    grid-area: ps;  
+  border-radius: 22px;
+  /* background: rgb(72, 85, 106); */
+  background: linear-gradient(0deg, 
+  rgb(72, 85, 106) 0%,
+   rgb(255, 255, 255) 100%);
+  }
+  .person3{
+    grid-area: pf;  
+  border-radius: 22px;
+  /* background: rgb(35, 0, 160); */
+    background: linear-gradient(0deg, 
+    rgb(19, 4, 71)0%,
+     rgb(255, 255, 255) 100%);
+  }
+  .person4{
+    border-radius: 22px;
+    /* background: rgb(206, 216, 211); */
+      background: linear-gradient(0deg, 
+      rgb(85, 85, 88) 0%,
+       rgb(255, 255, 255) 100%);
+    grid-area: pl;  
+  }
+  .person5{
+    border-radius: 22px;
+    /* background: rgb(206, 216, 211); */
+      background: linear-gradient(0deg, 
+      rgb(53, 95, 161) 0%,
+       rgb(255, 255, 255) 100%);
+    grid-area: hd;  
+  }
+
+  .pic{
+      
+  }
+  .pimg{
+    width: 49px;
+    border-radius: 50%;
+    float: left;
+    cursor: pointer;
+    border-right-width: 12px;
+    border-left-width: 15px;
+    border-bottom-width: 12px;
+    margin-top: 9px;
+    margin-right: 19px;
+    margin-left: ‒9;
+    margin-left: 9px;
+    margin-bottom: 9px;
+  }
+.fas{
+    color: black;
 }
